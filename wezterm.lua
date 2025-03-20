@@ -5,6 +5,9 @@ config.font = wezterm.font("CaskaydiaCove Nerd Font Mono")
 config.font_size = 10.0
 config.color_scheme = "OneHalfDark"
 
+config.initial_cols = 120
+config.initial_rows = 35
+
 local default_padding = {
 	left = 8,
 	right = 8,
