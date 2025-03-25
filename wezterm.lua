@@ -1,6 +1,10 @@
 local wezterm = require("wezterm")
 local config = {}
 
+if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
+  config.default_prog = { 'pwsh.exe', '-NoLogo' }
+end
+
 config.font = wezterm.font("CaskaydiaCove Nerd Font Mono", { weight = "DemiBold"})
 config.font_size = 10.0
 config.color_scheme = "OneHalfDark"
