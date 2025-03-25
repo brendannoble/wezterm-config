@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 local config = {}
 
-config.font = wezterm.font("CaskaydiaCove Nerd Font Mono", { weight = "Bold"})
+config.font = wezterm.font("CaskaydiaCove Nerd Font Mono", { weight = "DemiBold"})
 config.font_size = 10.0
 config.color_scheme = "OneHalfDark"
 
