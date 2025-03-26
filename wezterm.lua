@@ -1,13 +1,16 @@
 local wezterm = require("wezterm")
 local config = {}
 
-if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
-  config.default_prog = { 'pwsh.exe', '-NoLogo' }
+if wezterm.target_triple == "x86_64-pc-windows-msvc" then
+	config.default_prog = { "pwsh.exe", "-NoLogo" }
 end
 
-config.font = wezterm.font("CaskaydiaCove Nerd Font Mono", { weight = "DemiBold"})
-config.font_size = 10.0
-config.color_scheme = "OneHalfDark"
+config.font = wezterm.font("CaskaydiaCove Nerd Font Mono", { weight = "DemiBold" })
+config.font_size = 13.0
+config.color_scheme = "Oceanic Next (Gogh)"
+
+config.window_background_opacity = 0.90
+config.macos_window_background_blur = 40
 
 config.initial_cols = 120
 config.initial_rows = 35
