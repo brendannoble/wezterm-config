@@ -6,7 +6,7 @@ if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 end
 
 config.font = wezterm.font("CaskaydiaCove Nerd Font Mono", { weight = "DemiBold" })
-config.font_size = 13.0
+config.font_size = 10.0
 config.color_scheme = "Oceanic Next (Gogh)"
 
 config.window_background_opacity = 0.90
@@ -16,8 +16,8 @@ config.initial_cols = 120
 config.initial_rows = 35
 
 local default_padding = {
-	left = 8,
-	right = 8,
+	left = 16,
+	right = 16,
 	top = 8,
 	bottom = 8,
 }
