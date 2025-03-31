@@ -16,10 +16,10 @@ config.initial_cols = 120
 config.initial_rows = 35
 
 local default_padding = {
-	left = 16,
-	right = 16,
-	top = 8,
-	bottom = 8,
+	left = 24,
+	right = 24,
+	top = 16,
+	bottom = 16,
 }
 
 config.window_padding = default_padding
