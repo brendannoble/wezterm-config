@@ -3,6 +3,15 @@ local config = {}
 
 if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 	config.default_prog = { "pwsh.exe", "-NoLogo" }
+
+  config.keys = {
+    {
+      key = ".",
+      mods = "CTRL",
+      action = wezterm.action.SendString("\x1b[46;5u"),
+    }
+  }
+
 end
 
 config.font = wezterm.font("CaskaydiaCove Nerd Font Mono", { weight = "DemiBold" })
